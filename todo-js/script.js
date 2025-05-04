@@ -13,14 +13,38 @@ document.querySelector("#TodoForm").addEventListener("submit",function(e){
         </div>` ;      
          document.querySelector(".todo-input").value =""
 
-         var current_todo =document.querySelectorAll(".delete");
-         for(var i=0; i<current_todo.length; i++){
-            current_todo[i].onClick =function(){
-                this.parentNode.remove();
-            }
-         }
+         const current_todo =document.querySelectorAll(".delete");
+         current_todo.forEach((button) => {
+            button.addEventListener("click", function () {
+                this.closest(".Todo").remove(); // Remove the closest parent with class "Todo"
+            });
+        });
+        }
     }
-})
+)
 
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
