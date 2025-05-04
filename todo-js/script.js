@@ -19,6 +19,18 @@ document.querySelector("#TodoForm").addEventListener("submit",function(e){
                 this.closest(".Todo").remove(); // Remove the closest parent with class "Todo"
             });
         });
+        const todoItems = document.querySelectorAll("#todo-item");
+        todoItems.forEach((item)=>{
+            item.addEventListener("click",function(){
+                this.classList.toggle("completed")
+                if(this.classList.contains("completed")){
+                    this.style.textDecoration ="line-through"
+                }
+                else{
+                     this.style.textDecoration ="none"
+                }
+            })
+        })
         }
     }
 )
