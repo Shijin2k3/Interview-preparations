@@ -7,6 +7,6 @@ function factorial(n){
     }
 
 }
-const n=6
+const n=7
 result=factorial(n)
 console.log(result)
