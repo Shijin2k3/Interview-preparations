@@ -1,4 +1,4 @@
-const n=1
+const n=2
 let isprime=true
 function isPrime (n){
   if (n == 1 || n<1){
