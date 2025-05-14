@@ -9,7 +9,7 @@ def composite(n):
     if(isPrime):
         print(" {} is Prime no".format(n))
     else:
-        print(" {}  is Composite no".format(n))
+        print(" {} is Composite no".format(n))
 
 composite(n)
         
