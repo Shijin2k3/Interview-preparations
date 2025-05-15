@@ -1,5 +1,5 @@
 def isPalindrome(str):
     return str == str[::-1]
 
-text="radar"
+text="madan"
 print(isPalindrome(text))
