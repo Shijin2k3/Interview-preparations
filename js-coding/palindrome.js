@@ -1,5 +1,5 @@
 function isPalindrome(str){
     return str === str.split('').reverse().join('')
 }
-const input="mam"
+const input="madam"
 console.log(isPalindrome(input))
